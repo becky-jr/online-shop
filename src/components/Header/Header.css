@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.head-btn button {
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 14px;
+	text-align: center;
+}
+
+.head-btn button img {
+	max-width: 24px;
+	height: 24px;
+}
+
+ul li a {
+	font-family: Inter;
+	font-weight: 500;
+	font-style: Medium;
+	font-size: 14px;
+	color: #3d4249;
+}
+
+.personal-cabinet {
+	width: 186px;
+	height: 45px;
+	border-radius: 45px;
+
+	border: 1px solid #dbe1ed;
+}
+
+.personal-cabinet img {
+	width: 24px;
+	height: 24px;
+}
+
+.burger-menu {
+	width: 41px;
+	height: 41px;
+
+	background: #fbecda;
+	display: none;
+	border: 1px solid #a16341;
+	border-radius: 45px;
+
+    display: none;
+}
+
+@media screen and (max-width: 1050px) {
+	ul {
+		display: none;
+	}
+
+	.head-btn {
+		display: none;
+	}
+
+	.burger-menu {
+        display: flex;
+	}
+
+    .head-right {
+        display: flex;
+        gap: 10px;
+    }
+    .personal-cabinet {
+        width: 41px;
+        height: 41px;
+        transition: all 0.2s ease-in-out;
+    }
+    .cab-text {
+        display: none;
+        transition: all 0.3s ease-in-out;
+    }
+}

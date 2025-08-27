@@ -1,1 +1,35 @@
 @import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.App {
+	overflow: hidden;
+}
+
+.myContainer {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+@media screen and (max-width: 1050px) {
+	.myContainer {
+		max-width: 800px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.myContainer {
+		max-width: 600px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.myContainer {
+		max-width: 350px;
+	}
+}
+
+.body {
+padding: 1px;
+}
