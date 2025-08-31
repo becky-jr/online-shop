@@ -1,8 +1,12 @@
-
+import './Sidebar.css'
 
 const Sidebar = () => {
   return (
-    <div>Sidebar</div>
+    <div className="Sidebar">
+
+
+
+    </div>
   )
 }
 

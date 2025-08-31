@@ -1,28 +1,19 @@
+.slider {
+	display: flex;
+	overflow: hidden;
+	gap: 20px;
+}
+
+.slide img {
+	max-width: 1200px;
+	width: 100%;
+}
+
 .slider-container {
 	position: relative;
 	width: 100%; /* ширина как у экрана */
 	overflow: hidden; /* скрываем всё за пределами */
-    margin: 27px 0 71px;
-}
-
-.slider {
-	display: flex;
-	gap: 45px;
-	transition: transform 0.5s ease; /* плавное движение */
-}
-
-.slider-img {
-	width: 1200px;
-
-	min-width: 40%;
-	flex-shrink: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.slider-img img {
-	width: 100%;
+	margin: 27px 0 0;
 }
 
 .next,
@@ -31,16 +22,48 @@
 	height: 40px;
 	border-radius: 50%;
 	border: 1px solid #dbe1ed;
-    background-color: #fff;
+	background-color: #fff;
 }
 
 .next {
 	position: absolute;
-	top: 40%;
+	top: 36%;
 	right: 145px;
 }
 .prev {
 	position: absolute;
-	top: 40%;
+	top: 36%;
 	left: 145px;
+}
+
+.dots {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+}
+
+.dots-parent {
+	display: flex;
+	gap: 15px;
+	justify-content: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+@media screen and (max-width: 900px) {
+	.buttons {
+		display: none;
+	}
+
+	.slide {
+		height: 400px;
+	}
+
+	.slide img {
+		max-width: 600px;
+		width: 100%;
+		max-height: 400px;
+		height: 100%;
+		object-fit: cover;
+	}
 }
